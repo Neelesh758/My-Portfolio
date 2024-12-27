@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(4, 4, 63);
+}
+.card1{
+    background-color: white;
+    width: 320px;
+    height: 500px;
+    border-radius: 0px 50px 0px 50px;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.card1 h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.card1 p{
+    font-size: 20px;
+}
+.cardset{
+    display: flex;
+    margin: 30px;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.field{
+    margin: 100px;
+    padding: 100px;
+    border: 5px solid skyblue;
+    border-radius: 30px;
+}
+.field legend{
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(115, 166, 187);
+    text-align: center;
+}
+.card1:hover{
+    background-color: gray;
+}
+.card1:hover{
+    color: white;
+}
+/*footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h1{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.footerbuttons a{
+    background-color: transparent;
+    border: 2px solid rgb(105, 29, 29);
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.footerbuttons a:hover{
+    background-color: rgb(226, 97, 97);
+}

@@ -1,0 +1,280 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(4, 4, 63);
+}
+.cardset{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+/*Cards style*/
+.card1{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card1 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection h1{
+    font-size: 30px;
+}
+.textsection{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar{
+    width: 80%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+.card2{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card2 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection2 h1{
+    font-size: 30px;
+}
+.textsection2{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset2{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar2{
+    width: 75%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+
+.card3{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card3 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection3 h1{
+    font-size: 30px;
+}
+.textsection3{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset3{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar3{
+    width: 80%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+
+.card4{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card4 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection4 h1{
+    font-size: 30px;
+}
+.textsection4{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset4{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar4{
+    width: 50%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+
+.card5{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card5 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection5 h1{
+    font-size: 30px;
+}
+.textsection5{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset5{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar5{
+    width: 80%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+
+.card6{
+    background-color: white;
+    width: 305px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card6 img{
+    width: 100%;
+    height: 305px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.textsection6 h1{
+    font-size: 30px;
+}
+.textsection6{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.barset6{
+    background-color: transparent;
+    border: 1px solid rgb(1, 1, 78);
+    margin: 10px;
+    border-radius: 10px;
+}
+.bar6{
+    width: 65%;
+    background-color: rgb(104, 104, 253);
+    border-radius: 10px;
+}
+.card1:hover{
+    transform: translateY(-30px);
+}
+.card2:hover{
+    transform: translateY(-30px);
+}
+.card3:hover{
+    transform: translateY(-30px);
+}
+.card4:hover{
+    transform: translateY(-30px);
+}
+.card5:hover{
+    transform: translateY(-30px);
+}
+.card6:hover{
+    transform: translateY(-30px);
+}
+.field{
+    margin: 100px;
+    padding: 100px;
+    border: 5px solid skyblue;
+    border-radius: 30px;
+}
+.field legend{
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(115, 166, 187);
+    text-align: center;
+}
+/*footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h1{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.footerbuttons a{
+    background-color: transparent;
+    border: 2px solid rgb(105, 29, 29);
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.footerbuttons a:hover{
+    background-color: rgb(226, 97, 97);
+}

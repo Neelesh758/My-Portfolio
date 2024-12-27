@@ -1,0 +1,326 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(4, 4, 63);
+}
+/*navbar and its responsivness*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+    background-color: rgba(0, 0, 128, 0.418);
+}
+.navbar a{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navbar p{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.menu{
+    display: flex;
+}
+.navbar a:hover:after{
+    width: 100%;
+}
+.close,.open{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    display: none;
+}
+.open{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close{
+    top: 20px;
+    right: 20px;
+}
+#check{
+    display: none;
+}
+@media(max-width:747px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: navy;
+        transition: all 0.4s ease-in-out;
+    }
+    .menu a{
+        padding: 10px;
+    }  
+    .open , .close{
+        display: block;
+    }
+    #check:checked ~ .menu{right: 0;}  
+}
+/*Main Section*/
+.main{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.main h1,h3,p,img,a{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.main img{
+    margin-left: 50px;
+}
+.mainimage img{
+    width: 300px;
+    height: 300px;
+    border: 5px solid skyblue;
+    border-radius: 70px 70px 70px 0px;
+    transition: all 0.7s ease-in-out;
+}
+.mainimage img:hover{
+    transform: rotate3d(1,1,1,360deg);
+}
+.main h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.main h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.main p{
+    color: white;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.icons a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.btn1{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.btn a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: rgb(81, 142, 167);
+}
+/*Certificate Section*/
+.certificatesection{
+    margin: 50px;
+}
+.certificates legend{
+    text-align: center;
+    background-color: skyblue;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.certificates{
+    border: 5px solid skyblue;
+    border-radius: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    transition: all 0.2s ease-in-out;
+}
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.content h1{
+    text-align: center;
+    font-size: 30px;
+}
+.content a{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+}
+.btn2{
+    background-color: rgb(196, 55, 55);
+    border: 2px solid rgb(126, 3, 3);
+    width: 150px;
+    padding: 10px;
+    border-radius: 0px 30px 0px 30px;
+    transition: all 0.1s ease-in-out;
+}
+.btn2:hover{
+    background-color: rgb(94, 25, 25);
+}
+.cardcontainer:hover{
+    transform: translateY(-50px);
+}
+/*Projects*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.card1{
+    width: 325px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 10px;
+    height: 600px;
+}
+.card1 img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px;
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content2 p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.content2 h1{
+    text-align: center;
+    font-size: 25px;
+}
+.projectsection{
+    margin: 50px;
+}
+.card1:hover{
+    background-color:rgb(211, 178, 178);
+}
+/*Footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h1{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.footerbuttons a{
+    background-color: transparent;
+    border: 2px solid rgb(105, 29, 29);
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.footerbuttons a:hover{
+    background-color: rgb(226, 97, 97);
+}
+/*media*/
+@media(max-width: 736px){
+    .mainimage{
+        display: none;
+    }
+    .main{
+        background-image: url("./images/my\ photo.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .main h1{
+        color: black;
+    }
+    .main h3{
+        color: black;
+    }
+    .main p{
+        color: black;
+    }
+}

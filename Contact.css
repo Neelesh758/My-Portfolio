@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(4, 4, 63);
+}
+.heading{
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    background-color:rgb(40, 167, 218);
+    width: fit-content;
+    border-radius: 20px;
+}
+.contact{
+    display: flex;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.field{
+    background-color: white;
+    margin: 100px;
+    padding: 80px;
+    border: 3px solid skyblue;
+    border-radius: 0px 80px 0px 80px;
+}
+
+.field legend{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: skyblue;
+    font-weight: bold;
+}    
+.field input{
+    width: 300px;
+    padding: 15px;
+    border: 2px solid rgb(56, 184, 235);
+    border-radius: 8px;
+    color: black;
+    font-size: 15px;
+    background-color: rgb(245, 235, 216);
+}
+.submit{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(73, 8, 8);
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+.submit:active{
+    background-color: rgb(240, 114, 114);
+}
+/*Part2*/
+.otherdetails{
+    margin-top: 150px;
+}
+.imgtxt{
+    display: flex;
+    width: 400px;
+    background-color:transparent;
+    padding: 10px;
+    align-items: center;
+    margin: 20px;
+}
+.imgtxt img{
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+.imgtxt p{
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+/*Footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h1{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.footerbuttons a{
+    background-color: transparent;
+    border: 2px solid rgb(105, 29, 29);
+    padding: 8px;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.footerbuttons a:hover{
+    background-color: rgb(226, 97, 97);
+}
